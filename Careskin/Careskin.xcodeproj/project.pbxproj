@@ -77,7 +77,10 @@
 		E94994C31BA66B8A002737A2 /* Careskin */ = {
 			isa = PBXGroup;
 			children = (
+				E94994EA1BA67828002737A2 /* ViewControllers */,
 				E94994E61BA66E2B002737A2 /* Views */,
+				E94994E91BA67811002737A2 /* ViewModels */,
+				E94994EB1BA6783C002737A2 /* Models */,
 				E94994C61BA66B8A002737A2 /* AppDelegate.swift */,
 				E94994C81BA66B8A002737A2 /* ViewController.swift */,
 				E94994CA1BA66B8A002737A2 /* Main.storyboard */,
@@ -118,6 +121,27 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		E94994E91BA67811002737A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		E94994EA1BA67828002737A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E94994EB1BA6783C002737A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +441,7 @@
 				E94994E21BA66B8A002737A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E94994E31BA66B8A002737A2 /* Build configuration list for PBXNativeTarget "CareskinTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +450,7 @@
 				E94994E51BA66B8A002737A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
