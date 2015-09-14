@@ -13,6 +13,8 @@
 		E94994CE1BA66B8A002737A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94994CD1BA66B8A002737A2 /* Images.xcassets */; };
 		E94994D11BA66B8A002737A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94994CF1BA66B8A002737A2 /* LaunchScreen.xib */; };
 		E94994DD1BA66B8A002737A2 /* CareskinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94994DC1BA66B8A002737A2 /* CareskinTests.swift */; };
+		E94994EF1BA68BF2002737A2 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = E94994EE1BA68BF2002737A2 /* Cartfile */; };
+		E94994F11BA6939B002737A2 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94994F01BA6939B002737A2 /* SwiftHTTP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E94994D61BA66B8A002737A2 /* CareskinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareskinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94994DB1BA66B8A002737A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94994DC1BA66B8A002737A2 /* CareskinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareskinTests.swift; sourceTree = "<group>"; };
+		E94994EE1BA68BF2002737A2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		E94994F01BA6939B002737A2 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Careskin/Carthage/Build/Mac/SwiftHTTP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94994F11BA6939B002737A2 /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 		E94994B81BA66B8A002737A2 = {
 			isa = PBXGroup;
 			children = (
+				E94994F01BA6939B002737A2 /* SwiftHTTP.framework */,
 				E94994C31BA66B8A002737A2 /* Careskin */,
 				E94994D91BA66B8A002737A2 /* CareskinTests */,
 				E94994C21BA66B8A002737A2 /* Products */,
@@ -87,6 +93,7 @@
 				E94994CD1BA66B8A002737A2 /* Images.xcassets */,
 				E94994CF1BA66B8A002737A2 /* LaunchScreen.xib */,
 				E94994C41BA66B8A002737A2 /* Supporting Files */,
+				E94994EE1BA68BF2002737A2 /* Cartfile */,
 			);
 			path = Careskin;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 			files = (
 				E94994CC1BA66B8A002737A2 /* Main.storyboard in Resources */,
 				E94994D11BA66B8A002737A2 /* LaunchScreen.xib in Resources */,
+				E94994EF1BA68BF2002737A2 /* Cartfile in Resources */,
 				E94994CE1BA66B8A002737A2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +380,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Careskin/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Careskin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +396,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Careskin/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Careskin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
