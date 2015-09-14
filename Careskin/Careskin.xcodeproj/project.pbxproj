@@ -17,6 +17,7 @@
 		E94994FF1BA6C34D002737A2 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */; };
 		E94995011BA6C50E002737A2 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94995001BA6C50E002737A2 /* OAuthSwift.framework */; };
 		E94995031BA6C518002737A2 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94995021BA6C518002737A2 /* Haneke.framework */; };
+		E94995061BA6C855002737A2 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = E94995051BA6C855002737A2 /* Cartfile.resolved */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Careskin/Carthage/Build/Mac/SwiftHTTP.framework; sourceTree = "<group>"; };
 		E94995001BA6C50E002737A2 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Careskin/Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
 		E94995021BA6C518002737A2 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Careskin/Carthage/Build/Mac/Haneke.framework; sourceTree = "<group>"; };
+		E94995051BA6C855002737A2 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E94994CF1BA66B8A002737A2 /* LaunchScreen.xib */,
 				E94994C41BA66B8A002737A2 /* Supporting Files */,
 				E94994EE1BA68BF2002737A2 /* Cartfile */,
+				E94995051BA6C855002737A2 /* Cartfile.resolved */,
 			);
 			path = Careskin;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				E94994CC1BA66B8A002737A2 /* Main.storyboard in Resources */,
 				E94994D11BA66B8A002737A2 /* LaunchScreen.xib in Resources */,
 				E94994EF1BA68BF2002737A2 /* Cartfile in Resources */,
+				E94995061BA6C855002737A2 /* Cartfile.resolved in Resources */,
 				E94994CE1BA66B8A002737A2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
