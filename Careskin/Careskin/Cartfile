@@ -1,0 +1,3 @@
+github "dongri/OAuthSwift" ~> 0.3.7
+github "daltoniam/SwiftHTTP" ~> 0.9.5
+github "Haneke/HanekeSwift" ~> 0.9.1
