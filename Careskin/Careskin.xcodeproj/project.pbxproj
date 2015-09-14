@@ -77,6 +77,7 @@
 		E94994C31BA66B8A002737A2 /* Careskin */ = {
 			isa = PBXGroup;
 			children = (
+				E94994E61BA66E2B002737A2 /* Views */,
 				E94994C61BA66B8A002737A2 /* AppDelegate.swift */,
 				E94994C81BA66B8A002737A2 /* ViewController.swift */,
 				E94994CA1BA66B8A002737A2 /* Main.storyboard */,
@@ -110,6 +111,13 @@
 				E94994DB1BA66B8A002737A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E94994E61BA66E2B002737A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
