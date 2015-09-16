@@ -13,6 +13,8 @@
 		E93FCB0F1BA93E1C007320DC /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94995001BA6C50E002737A2 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E93FCB101BA93E22007320DC /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */; };
 		E93FCB111BA93E22007320DC /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E93FCB151BA950E2007320DC /* LaunchPageContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FCB141BA950E2007320DC /* LaunchPageContentViewModel.swift */; };
+		E93FCB171BA95153007320DC /* LaunchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FCB161BA95153007320DC /* LaunchPageViewController.swift */; };
 		E94994C71BA66B8A002737A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94994C61BA66B8A002737A2 /* AppDelegate.swift */; };
 		E94994C91BA66B8A002737A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94994C81BA66B8A002737A2 /* ViewController.swift */; };
 		E94994CC1BA66B8A002737A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94994CA1BA66B8A002737A2 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E93FCB141BA950E2007320DC /* LaunchPageContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPageContentViewModel.swift; sourceTree = "<group>"; };
+		E93FCB161BA95153007320DC /* LaunchPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPageViewController.swift; sourceTree = "<group>"; };
 		E94994C11BA66B8A002737A2 /* Careskin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careskin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94994C51BA66B8A002737A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94994C61BA66B8A002737A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E93FCB121BA95022007320DC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E93FCB141BA950E2007320DC /* LaunchPageContentViewModel.swift */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		E93FCB131BA95033007320DC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E93FCB161BA95153007320DC /* LaunchPageViewController.swift */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
 		E94994B81BA66B8A002737A2 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +183,7 @@
 		E94994E91BA67811002737A2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E93FCB121BA95022007320DC /* Launch */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +191,7 @@
 		E94994EA1BA67828002737A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E93FCB131BA95033007320DC /* Launch */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93FCB171BA95153007320DC /* LaunchPageViewController.swift in Sources */,
+				E93FCB151BA950E2007320DC /* LaunchPageContentViewModel.swift in Sources */,
 				E94994C91BA66B8A002737A2 /* ViewController.swift in Sources */,
 				E94994C71BA66B8A002737A2 /* AppDelegate.swift in Sources */,
 			);

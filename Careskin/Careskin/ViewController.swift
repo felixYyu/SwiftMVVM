@@ -7,13 +7,17 @@
 //
 
 import UIKit
-//import SwiftHTTP
+import SwiftHTTP
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //把引导页加入到程序的第一个页面之前
+        /*if let bootPageViewController = storyboard?.instantiateViewControllerWithIdentifier("BootPageViewController") as? BootPageViewController {
+        self.presentViewController(bootPageViewController, animated: true, completion: nil)
+        }*/
         
     }
 
