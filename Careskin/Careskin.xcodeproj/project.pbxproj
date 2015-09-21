@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E93FCB0B1BA93E16007320DC /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94995021BA6C518002737A2 /* Haneke.framework */; };
-		E93FCB0C1BA93E16007320DC /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94995021BA6C518002737A2 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E93FCB0E1BA93E1C007320DC /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94995001BA6C50E002737A2 /* OAuthSwift.framework */; };
-		E93FCB0F1BA93E1C007320DC /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94995001BA6C50E002737A2 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E93FCB101BA93E22007320DC /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */; };
-		E93FCB111BA93E22007320DC /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E93FCB151BA950E2007320DC /* LaunchPageContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FCB141BA950E2007320DC /* LaunchPageContentViewModel.swift */; };
 		E93FCB171BA95153007320DC /* LaunchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FCB161BA95153007320DC /* LaunchPageViewController.swift */; };
 		E94994C71BA66B8A002737A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94994C61BA66B8A002737A2 /* AppDelegate.swift */; };
@@ -23,6 +17,10 @@
 		E94994DD1BA66B8A002737A2 /* CareskinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94994DC1BA66B8A002737A2 /* CareskinTests.swift */; };
 		E94994EF1BA68BF2002737A2 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = E94994EE1BA68BF2002737A2 /* Cartfile */; };
 		E94995061BA6C855002737A2 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = E94995051BA6C855002737A2 /* Cartfile.resolved */; };
+		E9A6ABC81BAFD7BE0055A075 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A6ABC71BAFD7BE0055A075 /* OAuthSwift.framework */; };
+		E9A6ABC91BAFD7BE0055A075 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9A6ABC71BAFD7BE0055A075 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9A6ABCC1BAFD7D80055A075 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A6ABCB1BAFD7D80055A075 /* SwiftHTTP.framework */; };
+		E9A6ABCD1BAFD7D80055A075 /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9A6ABCB1BAFD7D80055A075 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E93FCB0D1BA93E17007320DC /* Embed Frameworks */ = {
+		E9A6ABCA1BAFD7BE0055A075 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E93FCB111BA93E22007320DC /* SwiftHTTP.framework in Embed Frameworks */,
-				E93FCB0F1BA93E1C007320DC /* OAuthSwift.framework in Embed Frameworks */,
-				E93FCB0C1BA93E16007320DC /* Haneke.framework in Embed Frameworks */,
+				E9A6ABCD1BAFD7D80055A075 /* SwiftHTTP.framework in Embed Frameworks */,
+				E9A6ABC91BAFD7BE0055A075 /* OAuthSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,10 +62,9 @@
 		E94994DB1BA66B8A002737A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94994DC1BA66B8A002737A2 /* CareskinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareskinTests.swift; sourceTree = "<group>"; };
 		E94994EE1BA68BF2002737A2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Careskin/Carthage/Build/Mac/SwiftHTTP.framework; sourceTree = "<group>"; };
-		E94995001BA6C50E002737A2 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Careskin/Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
-		E94995021BA6C518002737A2 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Careskin/Carthage/Build/Mac/Haneke.framework; sourceTree = "<group>"; };
 		E94995051BA6C855002737A2 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		E9A6ABC71BAFD7BE0055A075 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Careskin/Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
+		E9A6ABCB1BAFD7D80055A075 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Careskin/Carthage/Build/Mac/SwiftHTTP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E93FCB101BA93E22007320DC /* SwiftHTTP.framework in Frameworks */,
-				E93FCB0E1BA93E1C007320DC /* OAuthSwift.framework in Frameworks */,
-				E93FCB0B1BA93E16007320DC /* Haneke.framework in Frameworks */,
+				E9A6ABCC1BAFD7D80055A075 /* SwiftHTTP.framework in Frameworks */,
+				E9A6ABC81BAFD7BE0055A075 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +106,8 @@
 		E94994B81BA66B8A002737A2 = {
 			isa = PBXGroup;
 			children = (
-				E94995021BA6C518002737A2 /* Haneke.framework */,
-				E94995001BA6C50E002737A2 /* OAuthSwift.framework */,
-				E94994FE1BA6C34D002737A2 /* SwiftHTTP.framework */,
+				E9A6ABCB1BAFD7D80055A075 /* SwiftHTTP.framework */,
+				E9A6ABC71BAFD7BE0055A075 /* OAuthSwift.framework */,
 				E94994C31BA66B8A002737A2 /* Careskin */,
 				E94994D91BA66B8A002737A2 /* CareskinTests */,
 				E94994C21BA66B8A002737A2 /* Products */,
@@ -213,7 +207,7 @@
 				E94994BD1BA66B8A002737A2 /* Sources */,
 				E94994BE1BA66B8A002737A2 /* Frameworks */,
 				E94994BF1BA66B8A002737A2 /* Resources */,
-				E93FCB0D1BA93E17007320DC /* Embed Frameworks */,
+				E9A6ABCA1BAFD7BE0055A075 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,7 +242,8 @@
 		E94994B91BA66B8A002737A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Careskin;
 				TargetAttributes = {
 					E94994C01BA66B8A002737A2 = {
@@ -373,6 +368,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -445,7 +441,9 @@
 				);
 				INFOPLIST_FILE = Careskin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -454,13 +452,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Careskin/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Careskin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -468,16 +469,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = CareskinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Careskin.app/Careskin";
 			};
@@ -487,12 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CareskinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Careskin.app/Careskin";
 			};
