@@ -62,5 +62,10 @@ class LaunchPageViewController: UIPageViewController, UIPageViewControllerDataSo
         }
         return nil
     }
-
+    
+    func changeModel(index: Int) {
+        if let nextViewModel = self.viewModelAtIndex(index) {
+            setViewControllers([nextViewModel], direction: .Forward, animated: true, completion: nil)
+        }
+    }
 }

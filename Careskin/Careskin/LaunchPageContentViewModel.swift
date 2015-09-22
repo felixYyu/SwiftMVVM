@@ -12,6 +12,7 @@ class LaunchPageContentViewModel: UIViewController {
 
     @IBOutlet weak var contentImageView : UIImageView!
     @IBOutlet weak var pageControl : UIPageControl!
+    @IBOutlet weak var startedButton : UIButton!
     //引导页的顺序号
     var index : Int = 0
     var imageFile : String = ""
@@ -21,6 +22,7 @@ class LaunchPageContentViewModel: UIViewController {
         
         contentImageView?.image = UIImage(named: imageFile)
         pageControl?.currentPage = index
+        startedButton?.hidden = (index == 2) ? false : true
     }
 
 
@@ -39,5 +41,18 @@ class LaunchPageContentViewModel: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func close(sender: AnyObject) {
+        //保证引导页只在第一次打开时出现
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setBool(true, forKey: "hasViewedWalkthrough")
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func changeScreen(sender: UIPageControl) {
+        if let parentPageViewController = self.parentViewController as? LaunchPageViewController {
+            parentPageViewController.changeModel(sender.currentPage)
+        }
+    }
 
 }

@@ -30,18 +30,33 @@
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9gM-fR-crC">
-                                <rect key="frame" x="280" y="563" width="39" height="37"/>
+                                <rect key="frame" x="280" y="536" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="1" green="0.11922398400000001" blue="0.099432576339999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeScreen:" destination="50i-tO-oWL" eventType="valueChanged" id="NkI-74-LyL"/>
+                                </connections>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-2n-M4P">
+                                <rect key="frame" x="270" y="567" width="60" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.11922398400000001" blue="0.099432576339999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="开始体验">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="50i-tO-oWL" eventType="touchUpInside" id="FuC-4y-9iE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jTg-Pg-RO9" firstAttribute="top" secondItem="EY1-DD-dsn" secondAttribute="bottom" id="3fI-1t-hms"/>
                             <constraint firstItem="EY1-DD-dsn" firstAttribute="centerX" secondItem="6zz-fv-tnb" secondAttribute="centerX" id="4M8-m3-Tpt"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="9gM-fR-crC" secondAttribute="bottom" id="CPJ-ec-Gg2"/>
+                            <constraint firstItem="wtm-2n-M4P" firstAttribute="bottom" secondItem="jTg-Pg-RO9" secondAttribute="top" constant="-3" id="Byy-p5-D4h"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9gM-fR-crC" secondAttribute="bottom" constant="27" id="CPJ-ec-Gg2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EY1-DD-dsn" secondAttribute="trailing" id="DL2-gU-7Oc"/>
                             <constraint firstItem="EY1-DD-dsn" firstAttribute="top" secondItem="LQr-0q-Cgc" secondAttribute="bottom" id="Hcb-t1-INj"/>
+                            <constraint firstItem="wtm-2n-M4P" firstAttribute="centerX" secondItem="6zz-fv-tnb" secondAttribute="centerX" id="c2A-Fl-4Su"/>
                             <constraint firstItem="EY1-DD-dsn" firstAttribute="leading" secondItem="6zz-fv-tnb" secondAttribute="leadingMargin" id="qC4-Gl-SFv"/>
                             <constraint firstItem="9gM-fR-crC" firstAttribute="centerX" secondItem="6zz-fv-tnb" secondAttribute="centerX" id="sfe-wN-p9g"/>
                         </constraints>
@@ -49,6 +64,7 @@
                     <connections>
                         <outlet property="contentImageView" destination="EY1-DD-dsn" id="Im0-P3-DJ0"/>
                         <outlet property="pageControl" destination="9gM-fR-crC" id="uV6-Kc-ZnL"/>
+                        <outlet property="startedButton" destination="wtm-2n-M4P" id="zMh-dx-d9H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tm8-ai-wvs" userLabel="First Responder" sceneMemberID="firstResponder"/>

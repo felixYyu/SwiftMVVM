@@ -20,11 +20,16 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        //把引导页加入到程序的第一个页面之前
-        if let launchPageViewController = storyboard?.instantiateViewControllerWithIdentifier("LaunchPageViewController") as? LaunchPageViewController {
-            self.presentViewController(launchPageViewController, animated: true, completion: nil)
+        //把引导页加入到程序的第一个页面之前,并保证引导页只在第一次打开时出现
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let hasViewedWalkthrough = defaults.boolForKey("hasViewedWalkthrough")
+        
+        if hasViewedWalkthrough == false {
+            if let launchPageViewController = storyboard?.instantiateViewControllerWithIdentifier("LaunchPageViewController") as? LaunchPageViewController
+            {
+                self.presentViewController(launchPageViewController, animated: true, completion: nil)
+            }
         }
-
     }
     
     override func didReceiveMemoryWarning() {
