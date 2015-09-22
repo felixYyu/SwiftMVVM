@@ -11,6 +11,7 @@ import UIKit
 class LaunchPageContentViewModel: UIViewController {
 
     @IBOutlet weak var contentImageView : UIImageView!
+    @IBOutlet weak var pageControl : UIPageControl!
     //引导页的顺序号
     var index : Int = 0
     var imageFile : String = ""
@@ -18,7 +19,8 @@ class LaunchPageContentViewModel: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.contentImageView.image = UIImage(named: imageFile)
+        contentImageView?.image = UIImage(named: imageFile)
+        pageControl?.currentPage = index
     }
 
 

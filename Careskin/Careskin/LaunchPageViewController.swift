@@ -10,16 +10,16 @@ import UIKit
 
 class LaunchPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
-    var pageImages = ["@boot/app", "@boot/weinxin","@boot/others"]
+    var pageImages = ["WELCOME", "WELCOME","WELCOME"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataSource = self
         //Create the first walkthrough screen
-        /*if let startingViewModel = self.viewModelAtIndex(0) {
-        setViewControllers([startingViewModel], direction: .Forward, animated: true, completion: nil)
-        }*/
+        if let startingViewModel = self.viewModelAtIndex(0) {
+            setViewControllers([startingViewModel], direction: .Forward, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
