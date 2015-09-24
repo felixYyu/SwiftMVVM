@@ -9,7 +9,7 @@
 import UIKit
 import SwiftHTTP
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         let hasViewedWalkthrough = defaults.boolForKey("hasViewedWalkthrough")
         
-        if hasViewedWalkthrough == false {
+        if hasViewedWalkthrough == true {
             if let launchPageViewController = storyboard?.instantiateViewControllerWithIdentifier("LaunchPageViewController") as? LaunchPageViewController
             {
                 self.presentViewController(launchPageViewController, animated: true, completion: nil)

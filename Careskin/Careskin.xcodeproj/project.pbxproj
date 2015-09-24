@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92D91B71BB3E36C000A4A55 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D91B61BB3E36C000A4A55 /* Haneke.framework */; };
+		E92D91B81BB3E36C000A4A55 /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92D91B61BB3E36C000A4A55 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E92D91BA1BB3E37E000A4A55 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D91B91BB3E37E000A4A55 /* SQLite.framework */; };
+		E92D91BB1BB3E37E000A4A55 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E92D91B91BB3E37E000A4A55 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E93FCB151BA950E2007320DC /* LaunchPageContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FCB141BA950E2007320DC /* LaunchPageContentViewModel.swift */; };
 		E93FCB171BA95153007320DC /* LaunchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FCB161BA95153007320DC /* LaunchPageViewController.swift */; };
 		E94994C71BA66B8A002737A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94994C61BA66B8A002737A2 /* AppDelegate.swift */; };
@@ -42,6 +46,8 @@
 			files = (
 				E9A6ABCD1BAFD7D80055A075 /* SwiftHTTP.framework in Embed Frameworks */,
 				E9A6ABC91BAFD7BE0055A075 /* OAuthSwift.framework in Embed Frameworks */,
+				E92D91BB1BB3E37E000A4A55 /* SQLite.framework in Embed Frameworks */,
+				E92D91B81BB3E36C000A4A55 /* Haneke.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E92D91B61BB3E36C000A4A55 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Careskin/Carthage/Build/Mac/Haneke.framework; sourceTree = "<group>"; };
+		E92D91B91BB3E37E000A4A55 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Careskin/Carthage/Build/Mac/SQLite.framework; sourceTree = "<group>"; };
 		E93FCB141BA950E2007320DC /* LaunchPageContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPageContentViewModel.swift; sourceTree = "<group>"; };
 		E93FCB161BA95153007320DC /* LaunchPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPageViewController.swift; sourceTree = "<group>"; };
 		E94994C11BA66B8A002737A2 /* Careskin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careskin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +82,8 @@
 			files = (
 				E9A6ABCC1BAFD7D80055A075 /* SwiftHTTP.framework in Frameworks */,
 				E9A6ABC81BAFD7BE0055A075 /* OAuthSwift.framework in Frameworks */,
+				E92D91BA1BB3E37E000A4A55 /* SQLite.framework in Frameworks */,
+				E92D91B71BB3E36C000A4A55 /* Haneke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,8 @@
 		E94994B81BA66B8A002737A2 = {
 			isa = PBXGroup;
 			children = (
+				E92D91B91BB3E37E000A4A55 /* SQLite.framework */,
+				E92D91B61BB3E36C000A4A55 /* Haneke.framework */,
 				E9A6ABCB1BAFD7D80055A075 /* SwiftHTTP.framework */,
 				E9A6ABC71BAFD7BE0055A075 /* OAuthSwift.framework */,
 				E94994C31BA66B8A002737A2 /* Careskin */,

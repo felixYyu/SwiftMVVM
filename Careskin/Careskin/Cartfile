@@ -1,2 +1,4 @@
 github "dongri/OAuthSwift" ~> 0.4.3
 github "daltoniam/SwiftHTTP" ~> 1.0.0
+github "Haneke/HanekeSwift" ~> 0.10.0
+github "stephencelis/SQLite.swift" "swift-2"

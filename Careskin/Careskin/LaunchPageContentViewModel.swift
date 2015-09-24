@@ -45,7 +45,7 @@ class LaunchPageContentViewModel: UIViewController {
     @IBAction func close(sender: AnyObject) {
         //保证引导页只在第一次打开时出现
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setBool(true, forKey: "hasViewedWalkthrough")
+        defaults.setBool(false, forKey: "hasViewedWalkthrough")
         dismissViewControllerAnimated(true, completion: nil)
     }
     
