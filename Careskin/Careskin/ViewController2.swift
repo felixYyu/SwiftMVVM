@@ -9,27 +9,49 @@
 import UIKit
 
 class ViewController2: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var display: UILabel!
+    
+    var userIsInTheMiddleTypingNumber = false
+    var brain = CalculaterBrain()
+    
+    @IBAction func appendDigit(sender: UIButton) {
+        let digit = sender.currentTitle!
+        if userIsInTheMiddleTypingNumber {
+            display.text = display.text! + digit
+            print("digit = \(digit)")
+        }else{
+            display.text = digit
+            print(" init digit = \(digit)")
+            userIsInTheMiddleTypingNumber = true
+        }
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func operate(sender: UIButton) {
+        if userIsInTheMiddleTypingNumber {
+            enter()
+        }
+        if let operation = sender.currentTitle {
+            displayValue = brain.performOperation(operation)!
+        }else {
+            displayValue = 0
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func enter() {
+        userIsInTheMiddleTypingNumber = false
+        if let result = brain.pushOperand(displayValue) {
+            displayValue = result
+        } else {
+            displayValue = 0
+        }
     }
-    */
-
+    
+    var displayValue : Double {
+        get{
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+        }
+        set{
+            display.text = "\(newValue)"
+        }
+    }
 }
