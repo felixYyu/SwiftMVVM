@@ -29,7 +29,7 @@ class CalculaterBrain {
         }
     }
     
-    private var opsStack = [Op]()
+    private var opStack = [Op]()
     
     private var knowOps = [String:Op]()
     
@@ -42,6 +42,27 @@ class CalculaterBrain {
         knowOps["+"] = Op.BinaryOperation("+", +)
         knowOps["−"] = Op.BinaryOperation("−"){$1 - $0}
         knowOps["√"] = Op.UnaryOperation("√", sqrt)
+    }
+    
+    typealias PropertyList = AnyObject
+    
+    var program: PropertyList {//guaranteed to be a propertyList
+        get{
+            return opStack.map{ $0.description }
+        }
+        set{
+            if let opSymbols = newValue as? Array<String> {
+                var newOpStack = [Op]()
+                for opSymbol in opSymbols {
+                    if let op = knowOps[opSymbol] {
+                        newOpStack.append(op)
+                    }else if let operand = NSNumberFormatter().numberFromString(opSymbol)?.doubleValue{
+                        newOpStack.append(.Operand(operand))
+                    }
+                }
+                opStack = newOpStack
+            }
+        }
     }
     
     private func evaluate(ops: [Op]) -> (result: Double?, remainingOps:[Op]){
@@ -71,19 +92,19 @@ class CalculaterBrain {
     }
     
     func evaluate() -> Double? {
-        let (result, remainder) = evaluate(opsStack)
-        print("\(opsStack) = \(result) with \(remainder) left over")
+        let (result, remainder) = evaluate(opStack)
+        print("\(opStack) = \(result) with \(remainder) left over")
         return result
     }
     
     func pushOperand(operand : Double) -> Double? {
-        opsStack.append(Op.Operand(operand))
+        opStack.append(Op.Operand(operand))
         return evaluate()
     }
     
     func performOperation(symbol : String) -> Double? {
         if let operation = knowOps[symbol] {
-            opsStack.append(operation)
+            opStack.append(operation)
         }
         return evaluate()
     }
